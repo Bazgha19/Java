@@ -7,4 +7,9 @@ public class Currency {
         double usd = rupees * 0.013;
         System.out.println(rupees+ " rupees is equal to  "+usd+" USD");
     }
+
 }
+
+
+
+
