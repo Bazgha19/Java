@@ -8,6 +8,6 @@ public class ArrayChange {
     }
 
     private static void change(int[] array) {
-        array[0] = 100;
+        array[0] = 100; //if you make change to the object via this reference variable, same object will be changed.
     }
 }
