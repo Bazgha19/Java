@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Palindrome {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.print("Enter number: ");
         int n = in.nextInt();
         palindrome(n);
     }
@@ -15,10 +16,10 @@ public class Palindrome {
             number = number/10;
         }
         if (original == result){
-            System.out.println("It is palindrome");
+            System.out.println(original+" is a palindrome");
         }
         else{
-            System.out.println("Number is not a palindrome");
+            System.out.println(original+" is not a palindrome");
         }
     }
 }
