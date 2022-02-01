@@ -27,5 +27,24 @@ public class ArrListExample {
         for (int i = 0; i < 3; i++) {
             System.out.print(list.get(i)+" "); //list[index] syntax will not work here so we use get() to print the list
         }
+
+
+        //Multidimensional Array List
+
+        ArrayList<ArrayList<Integer>> l2 = new ArrayList<>();
+
+        //Initialize
+        for (int i = 0; i < 3; i++) {
+            l2.add(new ArrayList<>());
+        }
+
+        //Input
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 2; j++) {
+                l2.get(i).add(in.nextInt());
+            }
+        }
+        //Output
+        System.out.println(l2);
     }
 }
