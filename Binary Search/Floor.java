@@ -1,13 +1,17 @@
 public class Floor {
     public static void main(String[] args) {
         int[] arr = {4,6,8,9,28,34,54,66,70};
-        int target = 33;
+        int target = 19;
         System.out.println(floor(arr, target));
     }
     //Floor value: Less than or equal to target element.
     static int floor(int[] arr, int target){
         int start = 0;
         int end = arr.length-1;
+        if (target<arr[0]){
+            return -1;
+        }
+
         while (start<=end){
             int mid = start+(end-start)/2;
 
